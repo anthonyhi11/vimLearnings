@@ -1,0 +1,65 @@
+vim bindings
+
+
+hjkl - navigation
+
+iIaA - editing in line. i is before cursor, a is after
+I is at beginning of line, A is at end of line
+
+:d - delete line
+:u - undo
+
+x - deletes while in command mode
+r - revises the cursor in command mode
+
+Check out vimforvscode.com
+
+V - select
+control v - select only current cursor
+
+G - to the bottom
+gg - to the top
+
+% - toggle between parenthesis or brackets
+
+d - delete, auto copies to clipboard
+p - paste
+o - insert mode above current line
+O - insert mode below current line
+
+* - takes you to next occurence of a word
+
+$ - take to end in normal
+0 - take to beginning in normal
+
+W - takes to beginning of word (a good combo is "0 W", it takes you to first word on line... ^ does the same thing)
+
+{} - takes you to the next block of code, or really the space before it.
+:(and the number) takes you to the line number specified. example - ":17" take you to line 17.
+
+e - goes to end of current word or next word
+b - goes to previous word first letter
+
+Using explore mode...
+:e followed by the file (if it's in current directory) 
+
+REALLY GOOD ONE
+use /insertwordtosearchfor
+use n to find the occurence you want to change
+cgn allows you to change it, then exit insert mode and use . to apply the change on any additional ones 
+
+COPYING
+yy - copy
+{number}yy - copies the number of lines you specify
+y$ - copy to end of line from the cursor
+yiw - copy current word
+y% - copy to the next matching character... think () and {} and []
+
+DELETING
+dd - deletes the current line
+{number}dd deletes the number of lines specified
+d$ - deletes everything from cursor to end of line
+
+MOVE LINES
+ddp - moves line down one line
+ddP - moves line up one line
